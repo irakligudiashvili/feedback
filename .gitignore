@@ -1,0 +1,12 @@
+# Env
+.env
+
+# Node
+client/node_modules
+client/dist/
+
+# Python
+analytics/.venv/
+analytics/__pycache__/
+analytics/*.pyc
+analytics/.idea/

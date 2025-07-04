@@ -1,0 +1,10 @@
+{
+    "name": "irakli/feedback-auth",
+    "authors": [
+        {
+            "name": "Irakli Gudiashvili",
+            "email": "igudiashvili99@gmail.com"
+        }
+    ],
+    "require": {}
+}
