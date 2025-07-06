@@ -1,13 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 import './form.css'
 import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 
 function Login(){
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: '',
         password: ''
-    })
+    });
+    const { login } = useAuth();
 
     const [error, setError] = useState('');
 
@@ -37,10 +39,7 @@ function Login(){
                 return;
             }
 
-            localStorage.setItem('token', data.token);
-
-            localStorage.setItem('user', JSON.stringify(data.user));
-
+            login(data.token);
             navigate('/');
         } catch (err: any){
             setError("Error: " + err.message);
