@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo pdo_pgsql
 
 COPY server/ /app
-COPY .env /app/.env
+COPY server/.env /app/.env
 
 # Install Composer and dependencies
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
