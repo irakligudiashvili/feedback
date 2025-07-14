@@ -7,7 +7,6 @@ import Register from './pages/Register'
 import Cart from './pages/Cart'
 import ProtectedRoute from './utils/ProtectedRoute'
 import Dashboard from './pages/Dashboard'
-import Menu from './pages/Menu'
 import { useAuth } from './contexts/AuthContext'
 
 function App() {
@@ -22,13 +21,22 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/cart' element={<Cart />} />
+          {/* <Route path='/cart' element={<Cart />} /> */}
 
-          <Route
+          {/* <Route
             path="/menu"
             element={
               isLoggedIn && (
                 <Menu />
+              )
+            }
+          /> */}
+
+          <Route 
+            path='/cart'
+            element={
+              isLoggedIn && (
+                <Cart />
               )
             }
           />

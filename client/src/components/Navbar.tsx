@@ -11,9 +11,11 @@ function Navbar(){
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
-                <li>
-                    <Link to='/cart'>Cart</Link>
-                </li>
+                {isLoggedIn && (
+                    <li>
+                        <Link to='/cart'>Cart</Link>
+                    </li>
+                )}
 
                 {isLoggedIn ? (
                     <li>
