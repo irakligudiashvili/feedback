@@ -1,0 +1,36 @@
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 85%;
+}
+
+.menu-item{
+    background-color: #1B1B24;
+    min-width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-item-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.menu-item-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    width: 300px;
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+}
