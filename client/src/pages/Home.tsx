@@ -1,8 +1,12 @@
+import Menu from "../components/Menu"
+import './home.css'
+
 function Home(){
-    return <>
+    return <div className="home-container">
         <h1>Home</h1>
-        <h2>homepage</h2>
-    </>
+
+        <Menu />
+    </div>
 }
 
 export default Home
